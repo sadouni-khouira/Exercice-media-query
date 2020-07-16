@@ -1,6 +1,6 @@
 /* ====================================
-   CSS setup – ne rien modifier
-   éditer plus bas
+   CSS setup ï¿½ï¿½ne rien modifier
+   ï¿½diter plus bas
  * ==================================== */
 
 body { margin: 0; padding: 0; border: 0; }
@@ -14,6 +14,37 @@ li:nth-of-type(5n) { background-color: #e74c3c; }
 a { color: white; font-size: 16px; line-height: 50px; text-decoration: none; }
 
 /* ====================================
-   éditer à partir d'ici
+   ï¿½diter ï¿½ partir d'ici
  * ==================================== */
+       
+ul{
+  display: grid; 
+  height:50px;
+ }
+ @media screen and (min-width:600px){
+                                      ul{ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                                       margin-top: 50px;    
+                                    }
+ li:hover{   
+           margin:-30px -10px -30px -10px;      
+           padding: 30px 10px 30px 10px;   
+           z-index:1;        
+         }                             
+    @media screen and (max-width:600px){      
+       li{    display: grid;
+              grid-template: 1fr 1fr 1fr 1fr 1fr/1fr;  
+              height:50px;   
+         }                         
+                           }  
+    
+     
+                                
+
+    
+
+
+
+  
+
+
 
